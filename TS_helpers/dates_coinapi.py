@@ -1,7 +1,7 @@
 import pandas as pd
-import numpy as np
-import datetime
 
+
+# Date parsers for COINAPI date format
 def make_integer_time_index(time_exch, config=None):
     '''
     Creates integer time index from 'time_exchange' column returned in format of Coin API
@@ -53,3 +53,5 @@ def make_all_time_indexes(df):
                 time_agg_inds.append('time_' + agg_freq)
     df['date'] = pd.to_datetime(df['time_exchange']).dt.date
     return df
+
+
