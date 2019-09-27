@@ -4,3 +4,7 @@ TS_helpers/__pycache__/
 *.xml
 
 .idea/
+
+ARMA_model/.ipynb_checkpoints/
+
+.ipynb_checkpoints/
