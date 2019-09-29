@@ -10,3 +10,9 @@ ARMA_model/.ipynb_checkpoints/
 .ipynb_checkpoints/
 
 ARMA_model/.DS_Store
+
+pyESN-master/
+
+DeepESN-master/
+
+ARMA_model/__pycache__/
