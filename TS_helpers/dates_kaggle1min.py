@@ -19,7 +19,7 @@ def make_integer_time_index(time_exch, config=None):
     '''
 
 
-    ymd, hms = time_exch.split(' ')
+    ymd, hms = str(time_exch).split(' ')
     year, month, day = ymd.split('-')
     hour, minute, second = hms.split(':')
 
@@ -42,7 +42,7 @@ def make_all_time_indexes(df_):
 
     df = df_.copy()
     for agg_type in ['cycle', 'bin']:
-        for agg_freq in ['year', 'month', 'day', 'hour', 'minute']:
+        for agg_freq in ['year', 'month', 'day', 'hour']:
             print(agg_type, agg_freq)
             if agg_type == 'cycle':
                 config = str(agg_type + '_' + agg_freq)
