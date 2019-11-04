@@ -25,3 +25,5 @@ def print_rmse(df, col_pred, col_pred_real, masks, data_divs = ['train', 'valid'
     for data_div in data_divs:
         mask = masks[data_div]
         print(data_div + " set error \n"+str(np.sqrt(np.mean((df[col_pred]-df[mask][col_pred_real])**2)).round(4)))
+
+
